@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101c2c"><meta name="description" content="AI 应用与 GIS 竞赛信息看板"><title>AI × GIS 竞赛看板</title><link rel="stylesheet" href="./style.css"><script defer src="./app.js"></script></head>
+<body>
+<header class="hero"><div class="hero-inner"><p class="eyebrow">OPPORTUNITY RADAR · 竞赛情报</p><h1>AI <span>×</span> GIS<br>竞赛看板</h1><p class="lead">从官方公告找机会。先看变化，再打开原文核实细节。</p><div class="hero-meta"><span id="updated">正在读取数据…</span><span id="source-summary"></span></div></div><div class="orb" aria-hidden="true"><i></i><i></i><i></i><b>AI<br>GIS</b></div></header>
+<main><div class="toolbar"><nav class="tabs" aria-label="列表类型"><button class="active" data-tab="today">今日变化 <em id="today-count">0</em></button><button data-tab="all">全部竞赛 <em id="all-count">0</em></button><button data-tab="sources">来源状态</button></nav><div class="filters" id="filters"><label><span>方向</span><select id="category"><option value="all">全部方向</option><option value="AI">AI 与黑客松</option><option value="GIS">GIS 与遥感</option></select></label><label><span>状态</span><select id="deadline"><option value="all">全部状态</option><option value="open">截止日期未过</option><option value="unknown">截止待核实</option><option value="past">截止日期已过</option></select></label><label class="search"><span>搜索</span><input id="query" type="search" placeholder="赛事名称或来源"></label></div></div><p class="explain" id="explain"></p><div class="cards" id="cards" aria-live="polite"></div><div class="sources" id="sources" hidden></div></main>
+<footer>首次发现 ≠ 官方发布时间。截止与资格以官方当届公告为准。<br>数据来自公开页面；部分来源暂不支持稳定自动提取。</footer>
+</body></html>
