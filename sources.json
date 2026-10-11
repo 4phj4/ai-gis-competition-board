@@ -1,20 +1,20 @@
 [
   {"id":"modelscope","name":"魔搭社区","url":"https://modelscope.cn/events","category":"AI","mode":"links","path":"/events/","status":"active"},
-  {"id":"tencent","name":"腾讯云黑客松","url":"https://tch.cloud.tencent.com/","category":"AI","mode":"manual","status":"pending","reason":"当前首页链接以赛后报道为主，尚未找到稳定的当届报名公告列表"},
-  {"id":"hackathonweekly","name":"HackathonWeekly","url":"https://hackathonweekly.com/","category":"AI","mode":"manual","status":"pending","reason":"首页可读取，但赛事列表没有稳定的公开详情链接"},
+  {"id":"tencent","name":"腾讯云黑客松","url":"https://tch.cloud.tencent.com/","category":"AI","mode":"manual","status":"pending","reason":"首页可读到当届校内赛，但详情按钮无公开直链；当前赛事仅面向重庆大学学生，暂未找到可持续读取的开放赛事列表"},
+  {"id":"hackathonweekly","name":"HackathonWeekly","url":"https://hackathonweekly.com/events","category":"AI","mode":"manual","status":"pending","reason":"公开活动页可达，但赛事详情在当前返回的 HTML 中没有可识别链接"},
   {"id":"tianchi","name":"阿里云天池","url":"https://tianchi.aliyun.com/competition/","category":"AI","mode":"manual","status":"pending","reason":"列表主要由脚本渲染，普通 HTTP 页面无法稳定提取赛事"},
-  {"id":"huawei","name":"华为云开发者","url":"https://developer.huaweicloud.com/homepage/component_event.html","category":"AI","mode":"manual","status":"pending","reason":"待验证赛事详情的稳定公开入口"},
-  {"id":"datawhale","name":"Datawhale","url":"https://www.datawhale.cn/","category":"AI","mode":"manual","status":"pending","reason":"学习活动和正式竞赛需进一步区分"},
-  {"id":"datafountain","name":"DataFountain","url":"https://www.datafountain.cn/","category":"AI","mode":"manual","status":"pending","reason":"待验证列表接口和报名规则"},
-  {"id":"heywhale","name":"和鲸社区","url":"https://www.heywhale.com/home","category":"AI","mode":"manual","status":"pending","reason":"待验证公开竞赛详情入口"},
+  {"id":"huawei","name":"华为云开发者","url":"https://developer.huaweicloud.com/homepage/component_event.html","category":"AI","mode":"manual","status":"pending","reason":"活动页有当届赛事链接，但详情页依赖脚本；需验证是否属于 AI 应用赛事及报名资格"},
+  {"id":"datawhale","name":"Datawhale","url":"https://www.datawhale.cn/","category":"AI","mode":"manual","status":"pending","reason":"首页 HTML 没有公开赛事详情链接；学习营和正式竞赛仍需区分"},
+  {"id":"datafountain","name":"DataFountain","url":"https://www.datafountain.cn/competitions","category":"AI","mode":"links","path":"/competitions/","allow_empty":true,"status":"active"},
+  {"id":"heywhale","name":"和鲸社区","url":"https://www.heywhale.com/home","category":"AI","mode":"manual","status":"pending","reason":"首页与竞赛入口 HTML 未提供可提取的公开赛事详情链接"},
   {"id":"supermap","name":"SuperMap 杯高校 GIS 大赛","url":"https://www.giscontest.com/cn/","category":"GIS","mode":"manual","status":"blocked","reason":"本次自动请求遇到证书域名不匹配，未绕过证书校验"},
   {"id":"geoscene","name":"易智瑞杯 GIS 软件开发竞赛","url":"https://contest.geoscene.cn/overview","category":"GIS","mode":"single","status":"active","title":"2026易智瑞杯中国大学生GIS软件开发竞赛"},
   {"id":"csgpc","name":"中国测绘学会","url":"https://www.csgpc.org/detail/27080.html","category":"GIS","mode":"single","status":"active"},
   {"id":"gisera","name":"全国高校 GIS 技能大赛","url":"https://contest.gisera.com/view_197.html","category":"GIS","mode":"single","status":"active"},
   {"id":"gislevel","name":"地理信息技能大赛","url":"https://gislevel.geoscene.cn/ssjj","category":"GIS","mode":"manual","status":"blocked","reason":"本次自动请求出现证书验证失败"},
   {"id":"lablab","name":"lablab.ai","url":"https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii","category":"AI","mode":"single","status":"active"},
-  {"id":"devpost","name":"Devpost","url":"https://devpost.com/","category":"AI","mode":"manual","status":"pending","reason":"逐场地域资格和列表访问尚未验证"},
+  {"id":"devpost","name":"Devpost","url":"https://devpost.com/c/artificial-intelligence","category":"AI","mode":"manual","status":"pending","reason":"AI 分类页可访问，但返回的 HTML 没有赛事详情链接；还需逐场核对中国学生参赛资格"},
   {"id":"nasa","name":"NASA Space Apps Challenge","url":"https://www.spaceappschallenge.org/2026/","category":"GIS","mode":"manual","status":"blocked","reason":"本次自动请求出现证书验证失败，待核对云端环境"},
   {"id":"grss","name":"IEEE GRSS Data Fusion Contest","url":"https://www.grss-ieee.org/community/technical-committees/2026-ieee-grss-data-fusion-contest/","category":"GIS","mode":"single","status":"active"},
-  {"id":"saikr","name":"赛氪","url":"https://www.saikr.com/","category":"both","mode":"manual","status":"pending","reason":"综合转载源，需先建立主办方原文核验链"}
+  {"id":"saikr","name":"赛氪","url":"https://www.saikr.com/","category":"both","mode":"manual","status":"pending","reason":"首页 HTML 未提供可提取的赛事详情链接；综合转载还需回溯主办方原文"}
 ]

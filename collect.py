@@ -65,6 +65,20 @@ def labeled_date(text: str, pattern: re.Pattern) -> str | None:
 def discover(source: dict, soup: BeautifulSoup) -> list[tuple[str, str]]:
     if source["mode"] == "single":
         return [(source["url"], source.get("title") or title_of(soup))]
+    if source["id"] == "datafountain":
+        found = {}
+        for card in soup.select(".compt-item"):
+            a = next((link for link in card.select('a[href*="/competitions/"]') if clean(link.get_text(" ", strip=True))), None)
+            if not a:
+                continue
+            title = clean(a.get_text(" ", strip=True))
+            if not re.search(r"智能体|AI应用|人工智能应用|空间数据|地理信息|遥感应用|GIS|agent|hackathon", title, re.I):
+                continue
+            dates = DATE.findall(card.get_text(" ", strip=True))
+            if dates and datetime(*map(int, dates[-1])).date() < datetime.now(TZ).date():
+                continue
+            found[canonical(urljoin(source["url"], a["href"]))] = title
+        return list(found.items())[:20]
     found = {}
     for a in soup.select("a[href]"):
         url = canonical(urljoin(source["url"], a.get("href", "")))
@@ -91,11 +105,13 @@ def extract(source: dict, url: str, listed_title: str, soup: BeautifulSoup) -> d
     for tag in soup(["script", "style", "nav", "footer", "header"]):
         tag.decompose()
     title = title_of(soup) or listed_title
+    if source["id"] == "datafountain":
+        title = listed_title
     if source["id"] == "modelscope":
         title = re.split(r"\s+(?:进行中|已结束|未开始)\s+", listed_title, maxsplit=1)[0]
     if source.get("title"):
         title = source["title"]
-    if len(title) < 8 or not KEYWORDS.search(title) or NOISE.search(title):
+    if len(title) < 8 or (source["id"] != "datafountain" and not KEYWORDS.search(title)) or NOISE.search(title):
         return None
     content = soup.select_one('.ArticleContent') if source['id'] == 'csgpc' else (soup.select_one('.ck-content') if source['id'] == 'gisera' else None)
     text = (content or soup).get_text("\n", strip=True)
@@ -154,8 +170,10 @@ def run() -> dict:
         errors = []
         try:
             listing = fetch(source["url"])
+            if source["id"] == "datafountain" and not listing.select(".compt-item"):
+                raise ValueError("公开赛事列表结构未识别，无法判断是否有新赛事")
             links = discover(source, listing)
-            if not links:
+            if not links and not source.get("allow_empty"):
                 raise ValueError("未找到可识别的赛事公告")
             for url, name in links:
                 try:
@@ -180,14 +198,14 @@ def run() -> dict:
                     count += 1
                 except (requests.RequestException, ValueError) as exc:
                     errors.append(str(exc)[:100])
-            if not count:
+            if not count and not source.get("allow_empty"):
                 raise ValueError("找到链接但没有可验证的赛事详情")
             success += 1
             status = "ok" if not errors else "partial"
-            reason = f"读取 {count} 条；{len(errors)} 条详情失败" if errors else f"读取 {count} 条"
+            reason = f"读取 {count} 条；{len(errors)} 条详情失败" if errors else (f"读取 {count} 条" if count else "已读取公开列表；当前无仍在赛期且符合方向的条目")
         except (requests.RequestException, ValueError) as exc:
             status, reason = "error", str(exc)[:180]
-        statuses.append({"id": source["id"], "name": source["name"], "url": source["url"], "status": status, "reason": reason, "checked_at": now})
+        statuses.append({"id": source["id"], "name": source["name"], "url": source["url"], "status": status, "reason": reason, "checked_at": now, "coverage": "单页监测" if source["mode"] == "single" else "列表采集"})
     if success:
         previous["last_success_at"] = now
     previous.update({"items": items, "sources": statuses, "last_run_at": now, "baseline_at": previous.get("baseline_at") or (now if baseline and success else None)})
