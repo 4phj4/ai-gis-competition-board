@@ -22,8 +22,12 @@ python -m http.server 8000 --directory dist
 
 ## 云端运行状态
 
-`.github/workflows/update.yml` 已准备北京时间每天 08:00 的 GitHub Actions 定时采集和历史提交，且可手动触发。公开网页部署由仓库变量 `PUBLIC_SITE=true` 开启，默认关闭；开启前还需在仓库设置里把 Pages 的构建来源设为 GitHub Actions。**当前项目还不是 Git 仓库，也没有绑定 GitHub 账号；此定时任务尚未启动。** 用户确定网页访问范围、提供或授权创建目标仓库后，才能上线并验证电脑关机运行。
+在线地址：https://4phj4.github.io/ai-gis-competition-board/
 
-公开网页可用 GitHub Pages 免费托管，但 GitHub Free 的 Pages 需要公开仓库，网页对任何持链接者可访问。仅本人可见的方案需改用支持访问控制的托管与同步链路；不能把私有仓库等同于私有网页。云端调度可能延迟，不能保证分秒准确；公开仓库长时间无活动也可能被停用定时工作流。
+公开仓库：https://github.com/4phj4/ai-gis-competition-board
+
+`.github/workflows/update.yml` 已在 GitHub Actions 启用北京时间每天 08:00 的定时采集、历史提交和 Pages 部署，也可手动触发。仓库变量 `PUBLIC_SITE=true` 已设置，Pages 来源为 GitHub Actions。2026-10-11 首次云端手动运行成功，采集与部署作业均通过；线上首页和 `data.json` 返回 HTTP 200。定时配置已启用，但尚未经过下一次 08:00 自然触发验证。
+
+GitHub Pages 网页和仓库均公开，任何持链接者都可访问。云端调度可能延迟，不能保证分秒准确；公开仓库长时间无活动也可能被停用定时工作流。
 
 页面会区分“最近成功更新”和本轮来源错误；单个来源失败不会清除旧卡片。详情准确性始终以官方当届通知为准。
