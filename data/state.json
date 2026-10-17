@@ -17,7 +17,7 @@
       "published_at": null,
       "content_hash": "ad6bc8a95ec794a9f515afd4169737ecdc34d4c01f8fbcf134db08d43626c50d",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -39,7 +39,7 @@
       "published_at": null,
       "content_hash": "6fb074736c9717e6318e8d3d2592b9e216c432b11be325273d5f3c4d84d291df",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -61,7 +61,7 @@
       "published_at": null,
       "content_hash": "cc89d7e36ad506e5461b3569850cd846e93cae0dd8f109d5e7384260021ea888",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -83,7 +83,7 @@
       "published_at": null,
       "content_hash": "cd36b44272be20c8e3c085bba8305f8dc833c21682272d75a600488984245ba2",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -105,7 +105,7 @@
       "published_at": null,
       "content_hash": "966272d58aa25e1196956f40ba1d58adc50dadf85fe19dc5fcc14c7a9990e30e",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -127,9 +127,9 @@
       "published_at": null,
       "content_hash": "17c6c55e94bf995962d3add4176f6c047765925cdaef9fd28822d27dad917ea3",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "changed",
-      "changed_at": "2026-10-16T11:18:11+08:00",
+      "changed_at": "2026-10-17T11:08:46+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -151,21 +151,43 @@
       "published_at": null,
       "content_hash": "7c5553c05a0475aa1edf1a341d289cccc63143a2a3afb585b42e140f3be70c62",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-16T11:18:11+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
+    },
+    "5dcf872245effb7f": {
+      "id": "5dcf872245effb7f",
+      "title": "天猫 AI 黑客松·高校挑战赛",
+      "category": "AI",
+      "source_id": "modelscope",
+      "source_name": "魔搭社区",
+      "official_url": "https://modelscope.cn/events/383/%E6%AF%94%E8%B5%9B%E4%BB%8B%E7%BB%8D",
+      "registration_method": "赛事页提供报名入口",
+      "registration_url": "https://modelscope.cn/events/383/%E6%AF%94%E8%B5%9B%E4%BB%8B%E7%BB%8D",
+      "registration_deadline": "2026-10-21",
+      "submission_deadline": null,
+      "major_official": null,
+      "major_suggestion": "AI 应用开发相关方向",
+      "notes": "请核对公告原文中的组队、资格与费用要求。",
+      "published_at": null,
+      "content_hash": "e80ca930e62f399d204fa11ae1961aaa6dbf361963e88eaa4de3765189fb53bd",
+      "first_seen_at": "2026-10-17T11:08:46+08:00",
+      "last_checked_at": "2026-10-17T11:08:46+08:00",
+      "change_type": "new",
+      "changed_at": "2026-10-17T11:08:46+08:00",
+      "change_details": []
     }
   },
-  "last_success_at": "2026-10-16T11:18:11+08:00",
+  "last_success_at": "2026-10-17T11:08:46+08:00",
   "sources": [
     {
       "id": "modelscope",
       "name": "魔搭社区",
       "url": "https://modelscope.cn/events",
       "status": "ok",
-      "reason": "读取 2 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "reason": "读取 3 条",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "列表采集"
     },
     {
@@ -214,7 +236,7 @@
       "url": "https://www.datafountain.cn/competitions",
       "status": "ok",
       "reason": "已读取公开列表；当前无仍在赛期且符合方向的条目",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "列表采集"
     },
     {
@@ -239,7 +261,7 @@
       "url": "https://contest.geoscene.cn/overview",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "单页监测"
     },
     {
@@ -248,7 +270,7 @@
       "url": "https://www.csgpc.org/detail/27080.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "单页监测"
     },
     {
@@ -257,7 +279,7 @@
       "url": "https://contest.gisera.com/view_197.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "单页监测"
     },
     {
@@ -274,7 +296,7 @@
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "单页监测"
     },
     {
@@ -299,7 +321,7 @@
       "url": "https://www.grss-ieee.org/community/technical-committees/2026-ieee-grss-data-fusion-contest/",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-16T11:18:11+08:00",
+      "checked_at": "2026-10-17T11:08:46+08:00",
       "coverage": "单页监测"
     },
     {
@@ -311,6 +333,6 @@
       "checked_at": null
     }
   ],
-  "last_run_at": "2026-10-16T11:18:11+08:00",
+  "last_run_at": "2026-10-17T11:08:46+08:00",
   "baseline_at": "2026-10-11T18:40:27+08:00"
 }
