@@ -17,7 +17,7 @@
       "published_at": null,
       "content_hash": "ad6bc8a95ec794a9f515afd4169737ecdc34d4c01f8fbcf134db08d43626c50d",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-20T11:34:37+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -61,7 +61,7 @@
       "published_at": null,
       "content_hash": "cc89d7e36ad506e5461b3569850cd846e93cae0dd8f109d5e7384260021ea888",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -83,7 +83,7 @@
       "published_at": null,
       "content_hash": "cd36b44272be20c8e3c085bba8305f8dc833c21682272d75a600488984245ba2",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -127,9 +127,9 @@
       "published_at": null,
       "content_hash": "12c1954cb92067b74843d2e27f4971e22ec8b429c37e013eb1ed8f41ff853a25",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "changed",
-      "changed_at": "2026-10-26T11:24:25+08:00",
+      "changed_at": "2026-10-27T11:51:47+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -151,7 +151,7 @@
       "published_at": null,
       "content_hash": "7c5553c05a0475aa1edf1a341d289cccc63143a2a3afb585b42e140f3be70c62",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -173,9 +173,9 @@
       "published_at": null,
       "content_hash": "e80ca930e62f399d204fa11ae1961aaa6dbf361963e88eaa4de3765189fb53bd",
       "first_seen_at": "2026-10-17T11:08:46+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "new",
-      "changed_at": "2026-10-26T11:24:25+08:00",
+      "changed_at": "2026-10-27T11:51:47+08:00",
       "change_details": []
     },
     {
@@ -195,9 +195,9 @@
       "published_at": null,
       "content_hash": "d85672778c19c8345dd022c5743351961b7c442d672e14afcd15d4066c865327",
       "first_seen_at": "2026-10-20T11:34:37+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "new",
-      "changed_at": "2026-10-26T11:24:25+08:00",
+      "changed_at": "2026-10-27T11:51:47+08:00",
       "change_details": []
     },
     {
@@ -217,9 +217,9 @@
       "published_at": null,
       "content_hash": "5a3e0dc39002f9722b444b9e785c6d999b82d2d12c1367510486a3a6a72a5816",
       "first_seen_at": "2026-10-23T11:32:24+08:00",
-      "last_checked_at": "2026-10-26T11:24:25+08:00",
+      "last_checked_at": "2026-10-27T11:51:47+08:00",
       "change_type": "new",
-      "changed_at": "2026-10-26T11:24:25+08:00",
+      "changed_at": "2026-10-27T11:51:47+08:00",
       "change_details": []
     }
   ],
@@ -229,8 +229,8 @@
       "name": "魔搭社区",
       "url": "https://modelscope.cn/events",
       "status": "ok",
-      "reason": "读取 3 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "reason": "读取 4 条",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "列表采集"
     },
     {
@@ -279,7 +279,7 @@
       "url": "https://www.datafountain.cn/competitions",
       "status": "ok",
       "reason": "已读取公开列表；当前无仍在赛期且符合方向的条目",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "列表采集"
     },
     {
@@ -304,7 +304,7 @@
       "url": "https://contest.geoscene.cn/overview",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "单页监测"
     },
     {
@@ -313,16 +313,16 @@
       "url": "https://www.csgpc.org/detail/27080.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "单页监测"
     },
     {
       "id": "gisera",
       "name": "全国高校 GIS 技能大赛",
       "url": "https://contest.gisera.com/view_197.html",
-      "status": "ok",
-      "reason": "读取 1 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "status": "error",
+      "reason": "HTTPSConnectionPool(host='contest.gisera.com', port=443): Read timed out. (read timeout=18)",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "单页监测"
     },
     {
@@ -339,7 +339,7 @@
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "单页监测"
     },
     {
@@ -364,7 +364,7 @@
       "url": "https://www.grss-ieee.org/community/technical-committees/2026-ieee-grss-data-fusion-contest/",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-10-26T11:24:25+08:00",
+      "checked_at": "2026-10-27T11:51:47+08:00",
       "coverage": "单页监测"
     },
     {
@@ -376,7 +376,7 @@
       "checked_at": null
     }
   ],
-  "last_run_at": "2026-10-26T11:24:25+08:00",
-  "last_success_at": "2026-10-26T11:24:25+08:00",
+  "last_run_at": "2026-10-27T11:51:47+08:00",
+  "last_success_at": "2026-10-27T11:51:47+08:00",
   "baseline_at": "2026-10-11T18:40:27+08:00"
 }
