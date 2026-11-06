@@ -17,7 +17,7 @@
       "published_at": null,
       "content_hash": "ad6bc8a95ec794a9f515afd4169737ecdc34d4c01f8fbcf134db08d43626c50d",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -39,7 +39,7 @@
       "published_at": null,
       "content_hash": "6fb074736c9717e6318e8d3d2592b9e216c432b11be325273d5f3c4d84d291df",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -61,7 +61,7 @@
       "published_at": null,
       "content_hash": "cc89d7e36ad506e5461b3569850cd846e93cae0dd8f109d5e7384260021ea888",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -83,7 +83,7 @@
       "published_at": null,
       "content_hash": "cd36b44272be20c8e3c085bba8305f8dc833c21682272d75a600488984245ba2",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -127,9 +127,9 @@
       "published_at": null,
       "content_hash": "a6fe1dc7c97c260f406f9355db61664394042b80cc69b8564ec24057cdba324d",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "changed",
-      "changed_at": "2026-11-05T13:18:59+08:00",
+      "changed_at": "2026-11-06T13:18:34+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -151,7 +151,7 @@
       "published_at": null,
       "content_hash": "7c5553c05a0475aa1edf1a341d289cccc63143a2a3afb585b42e140f3be70c62",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -195,9 +195,9 @@
       "published_at": null,
       "content_hash": "d85672778c19c8345dd022c5743351961b7c442d672e14afcd15d4066c865327",
       "first_seen_at": "2026-10-20T11:34:37+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-05T13:18:59+08:00",
+      "changed_at": "2026-11-06T13:18:34+08:00",
       "change_details": []
     },
     "8554830487948343": {
@@ -239,9 +239,9 @@
       "published_at": null,
       "content_hash": "86047dc88767180e5c6a70447fdf273a53f5c6b414e229f9151a3e20e14747c2",
       "first_seen_at": "2026-11-03T13:29:19+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-05T13:18:59+08:00",
+      "changed_at": "2026-11-06T13:18:34+08:00",
       "change_details": []
     },
     "75aec6f8b59515e2": {
@@ -261,21 +261,43 @@
       "published_at": null,
       "content_hash": "90a838fc8461a5ced12adec3cdf5c5e2f752640a88e9b5056671e9f0ce6cc52b",
       "first_seen_at": "2026-11-04T12:58:16+08:00",
-      "last_checked_at": "2026-11-05T13:18:59+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-05T13:18:59+08:00",
+      "changed_at": "2026-11-06T13:18:34+08:00",
+      "change_details": []
+    },
+    "4e8f5354fd02a581": {
+      "id": "4e8f5354fd02a581",
+      "title": "48H和真实世界碰一碰｜首届地瓜机器人黑客松",
+      "category": "AI",
+      "source_id": "modelscope",
+      "source_name": "魔搭社区",
+      "official_url": "https://modelscope.cn/events/416/%E6%AF%94%E8%B5%9B%E7%AE%80%E4%BB%8B",
+      "registration_method": "赛事页提供报名入口",
+      "registration_url": "https://modelscope.cn/events/416/%E6%AF%94%E8%B5%9B%E7%AE%80%E4%BB%8B",
+      "registration_deadline": "2026-11-30",
+      "submission_deadline": null,
+      "major_official": null,
+      "major_suggestion": "AI 应用开发相关方向",
+      "notes": "请核对公告原文中的组队、资格与费用要求。",
+      "published_at": null,
+      "content_hash": "2f0c0b3c59a181db2679530617f42f1ec1a00c205c690e8025cfe776bf9ab250",
+      "first_seen_at": "2026-11-06T13:18:34+08:00",
+      "last_checked_at": "2026-11-06T13:18:34+08:00",
+      "change_type": "new",
+      "changed_at": "2026-11-06T13:18:34+08:00",
       "change_details": []
     }
   },
-  "last_success_at": "2026-11-05T13:18:59+08:00",
+  "last_success_at": "2026-11-06T13:18:34+08:00",
   "sources": [
     {
       "id": "modelscope",
       "name": "魔搭社区",
       "url": "https://modelscope.cn/events",
       "status": "ok",
-      "reason": "读取 5 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "reason": "读取 6 条",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "列表采集"
     },
     {
@@ -324,7 +346,7 @@
       "url": "https://www.datafountain.cn/competitions",
       "status": "ok",
       "reason": "已读取公开列表；当前无仍在赛期且符合方向的条目",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "列表采集"
     },
     {
@@ -349,7 +371,7 @@
       "url": "https://contest.geoscene.cn/overview",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "单页监测"
     },
     {
@@ -358,16 +380,16 @@
       "url": "https://www.csgpc.org/detail/27080.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "单页监测"
     },
     {
       "id": "gisera",
       "name": "全国高校 GIS 技能大赛",
       "url": "https://contest.gisera.com/view_197.html",
-      "status": "ok",
-      "reason": "读取 1 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "status": "error",
+      "reason": "500 Server Error: Internal Server Error for url: https://contest.gisera.com/view_197.html",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "单页监测"
     },
     {
@@ -384,7 +406,7 @@
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "单页监测"
     },
     {
@@ -409,7 +431,7 @@
       "url": "https://www.grss-ieee.org/community/technical-committees/2026-ieee-grss-data-fusion-contest/",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-05T13:18:59+08:00",
+      "checked_at": "2026-11-06T13:18:34+08:00",
       "coverage": "单页监测"
     },
     {
@@ -421,6 +443,6 @@
       "checked_at": null
     }
   ],
-  "last_run_at": "2026-11-05T13:18:59+08:00",
+  "last_run_at": "2026-11-06T13:18:34+08:00",
   "baseline_at": "2026-10-11T18:40:27+08:00"
 }
