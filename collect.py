@@ -221,6 +221,8 @@ def run() -> dict:
                     count += 1
                 except (requests.RequestException, ValueError) as exc:
                     errors.append(str(exc)[:100])
+            if not count and errors:
+                raise ValueError(f"找到公告，但 {len(errors)} 条详情均读取失败")
             if not count and not (source.get("allow_empty") or source["mode"] == "listing"):
                 raise ValueError("找到链接但没有可验证的赛事详情")
             success += 1
