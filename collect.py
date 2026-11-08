@@ -30,7 +30,9 @@ def clean(value: str) -> str:
 
 def canonical(url: str) -> str:
     p = urlparse(url)
-    return urlunparse((p.scheme, p.netloc.lower(), p.path.rstrip("/") or "/", "", "", ""))
+    # NUIST's bulletin uses a query parameter as the stable notice ID.
+    query = p.query if p.path.endswith("/content.jsp") else ""
+    return urlunparse((p.scheme, p.netloc.lower(), p.path.rstrip("/") or "/", "", query, ""))
 
 
 def fetch(url: str) -> BeautifulSoup:
@@ -65,6 +67,22 @@ def labeled_date(text: str, pattern: re.Pattern) -> str | None:
 def discover(source: dict, soup: BeautifulSoup) -> list[tuple[str, str]]:
     if source["mode"] == "single":
         return [(source["url"], source.get("title") or title_of(soup))]
+    if source["mode"] == "listing":
+        anchors = soup.select(source["selector"])
+        if not anchors:
+            raise ValueError("公告列表结构未识别，无法判断是否有新机会")
+        found = {}
+        for a in anchors:
+            name = clean(a.get("title") or a.get_text(" ", strip=True))
+            if not 8 <= len(name) <= 180:
+                continue
+            if not re.search(source["include"], name, re.I) or re.search(source.get("exclude", r"$^"), name, re.I):
+                continue
+            url = canonical(urljoin(source["url"], a.get("href", "")))
+            if urlparse(url).netloc != urlparse(source["url"]).netloc or url == canonical(source["url"]):
+                continue
+            found.setdefault(url, name)
+        return list(found.items())[:source.get("limit", 12)]
     if source["id"] == "datafountain":
         found = {}
         for card in soup.select(".compt-item"):
@@ -105,19 +123,22 @@ def extract(source: dict, url: str, listed_title: str, soup: BeautifulSoup) -> d
     for tag in soup(["script", "style", "nav", "footer", "header"]):
         tag.decompose()
     title = title_of(soup) or listed_title
+    if source["mode"] == "listing":
+        title = listed_title
     if source["id"] == "datafountain":
         title = listed_title
     if source["id"] == "modelscope":
         title = re.split(r"\s+(?:进行中|已结束|未开始)\s+", listed_title, maxsplit=1)[0]
     if source.get("title"):
         title = source["title"]
-    if len(title) < 8 or (source["id"] != "datafountain" and not KEYWORDS.search(title)) or NOISE.search(title):
+    if len(title) < 8 or (source["id"] != "datafountain" and source["mode"] != "listing" and not KEYWORDS.search(title)) or NOISE.search(title):
         return None
     content = soup.select_one('.ArticleContent') if source['id'] == 'csgpc' else (soup.select_one('.ck-content') if source['id'] == 'gisera' else None)
     text = (content or soup).get_text("\n", strip=True)
     # Only use dates next to an explicit label; free-floating dates can be publication dates.
     registration = labeled_date(text, LABELS["registration_deadline"])
     submission = labeled_date(text, LABELS["submission_deadline"])
+    campus_deadline = labeled_date(text, re.compile(r"校内(?:报名|提交|申报)截止|(?:报名|提交|申报)截止.{0,8}校内")) if source.get("campus") else None
     if source["id"] == "modelscope":
         match = re.search(r"(20\d{2}-\d{1,2}-\d{1,2})\s+\d{1,2}:\d{2}\s+报名截止", listed_title)
         registration = match.group(1) if match else registration
@@ -139,15 +160,16 @@ def extract(source: dict, url: str, listed_title: str, soup: BeautifulSoup) -> d
             break
     images = ' '.join(img.get('src', '') for img in content.select('img[src]')) if content else ''
     digest = hashlib.sha256((title + "\n" + clean(text)[:12000] + images).encode()).hexdigest()
+    opportunity_type = "项目申报" if re.search(r"(?:大学生创新创业|大学生创新|大学生创业)训练计划|大创项目", title) else ("校内选拔" if source.get("campus") and re.search(r"校内选拔|校赛", title) else "竞赛")
     return {
         "id": hashlib.sha256(canonical(url).encode()).hexdigest()[:16],
-        "title": title[:150], "category": source["category"], "source_id": source["id"],
+        "title": title[:150], "category": source["category"], "opportunity_type": opportunity_type, "campus_source": bool(source.get("campus")), "source_id": source["id"],
         "source_name": source["name"], "official_url": url,
         "registration_method": "赛事页提供报名入口" if registration_url and source["id"] == "modelscope" else ("网页入口待核实" if registration_url else "未公布／待核实"),
         "registration_url": registration_url, "registration_deadline": registration,
-        "submission_deadline": submission, "major_official": None,
-        "major_suggestion": "地理空间相关专业" if source["category"] == "GIS" else "AI 应用开发相关方向",
-        "notes": "请核对公告原文中的组队、资格与费用要求。" + (" 国际赛事须逐场核对中国学生参赛与领奖资格。" if source["id"] in ("lablab", "nasa", "grss") else ""),
+        "submission_deadline": submission, "campus_deadline": campus_deadline, "major_official": None,
+        "major_suggestion": "地理空间相关专业" if source["category"] == "GIS" else ("AI 应用开发相关方向" if source["category"] == "AI" else "理工科及跨学科方向，按当届要求核实"),
+        "notes": "请核对公告原文中的组队、资格与费用要求。" + (" 本校竞赛认定以当年目录为准；优先核对校内截止时间。" if source.get("campus") else "") + (" 国际赛事须逐场核对中国学生参赛与领奖资格。" if source["id"] in ("lablab", "nasa", "grss") else ""),
         "published_at": published, "content_hash": digest,
     }
 
@@ -160,6 +182,7 @@ def run() -> dict:
     today = datetime.now(TZ).date().isoformat()
     now = datetime.now(TZ).isoformat(timespec="seconds")
     baseline = not bool(items)
+    initialized_sources = set(previous.get("initialized_sources", [x["id"] for x in previous.get("sources", []) if x.get("status") in ("ok", "partial")]))
     statuses = []
     success = 0
     for source in sources:
@@ -173,7 +196,7 @@ def run() -> dict:
             if source["id"] == "datafountain" and not listing.select(".compt-item"):
                 raise ValueError("公开赛事列表结构未识别，无法判断是否有新赛事")
             links = discover(source, listing)
-            if not links and not source.get("allow_empty"):
+            if not links and not (source.get("allow_empty") or source["mode"] == "listing"):
                 raise ValueError("未找到可识别的赛事公告")
             for url, name in links:
                 try:
@@ -184,7 +207,7 @@ def run() -> dict:
                     old = items.get(item["id"])
                     item["first_seen_at"] = old["first_seen_at"] if old else now
                     item["last_checked_at"] = now
-                    item["change_type"] = ("baseline" if baseline else "new") if not old else ("changed" if old["content_hash"] != item["content_hash"] else old.get("change_type", "unchanged"))
+                    item["change_type"] = ("baseline" if baseline or source["id"] not in initialized_sources else "new") if not old else ("changed" if old["content_hash"] != item["content_hash"] else old.get("change_type", "unchanged"))
                     item["changed_at"] = now if item["change_type"] in ("new", "changed") else (old or {}).get("changed_at")
                     if old and old["content_hash"] != item["content_hash"]:
                         details = []
@@ -198,17 +221,18 @@ def run() -> dict:
                     count += 1
                 except (requests.RequestException, ValueError) as exc:
                     errors.append(str(exc)[:100])
-            if not count and not source.get("allow_empty"):
+            if not count and not (source.get("allow_empty") or source["mode"] == "listing"):
                 raise ValueError("找到链接但没有可验证的赛事详情")
             success += 1
+            initialized_sources.add(source["id"])
             status = "ok" if not errors else "partial"
-            reason = f"读取 {count} 条；{len(errors)} 条详情失败" if errors else (f"读取 {count} 条" if count else "已读取公开列表；当前无仍在赛期且符合方向的条目")
+            reason = f"读取 {count} 条；{len(errors)} 条详情失败" if errors else (f"读取 {count} 条" if count else "已读取公开列表；当前无符合筛选条件的公告")
         except (requests.RequestException, ValueError) as exc:
             status, reason = "error", str(exc)[:180]
         statuses.append({"id": source["id"], "name": source["name"], "url": source["url"], "status": status, "reason": reason, "checked_at": now, "coverage": "单页监测" if source["mode"] == "single" else "列表采集"})
     if success:
         previous["last_success_at"] = now
-    previous.update({"items": items, "sources": statuses, "last_run_at": now, "baseline_at": previous.get("baseline_at") or (now if baseline and success else None)})
+    previous.update({"items": items, "sources": statuses, "initialized_sources": sorted(initialized_sources), "last_run_at": now, "baseline_at": previous.get("baseline_at") or (now if baseline and success else None)})
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(previous, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     dist = ROOT / "dist"
