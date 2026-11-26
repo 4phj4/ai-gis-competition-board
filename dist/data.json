@@ -67,7 +67,7 @@
       "published_at": null,
       "content_hash": "cc89d7e36ad506e5461b3569850cd846e93cae0dd8f109d5e7384260021ea888",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -92,7 +92,7 @@
       "published_at": null,
       "content_hash": "cd36b44272be20c8e3c085bba8305f8dc833c21682272d75a600488984245ba2",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -117,7 +117,7 @@
       "published_at": null,
       "content_hash": "966272d58aa25e1196956f40ba1d58adc50dadf85fe19dc5fcc14c7a9990e30e",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -142,9 +142,9 @@
       "published_at": null,
       "content_hash": "f12bf5d03212726964dde29f7bcd7c011bdbef105d86aced403f7d19cf7bfa7a",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "changed",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -169,7 +169,7 @@
       "published_at": null,
       "content_hash": "7c5553c05a0475aa1edf1a341d289cccc63143a2a3afb585b42e140f3be70c62",
       "first_seen_at": "2026-10-11T18:40:27+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -263,9 +263,9 @@
       "published_at": null,
       "content_hash": "86047dc88767180e5c6a70447fdf273a53f5c6b414e229f9151a3e20e14747c2",
       "first_seen_at": "2026-11-03T13:29:19+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -313,9 +313,9 @@
       "published_at": null,
       "content_hash": "2f0c0b3c59a181db2679530617f42f1ec1a00c205c690e8025cfe776bf9ab250",
       "first_seen_at": "2026-11-06T13:18:34+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -338,9 +338,9 @@
       "published_at": null,
       "content_hash": "ac87ac218c4e9c1904fd3253d68645c8a264ca37507a606965c9d53329d4c9ad",
       "first_seen_at": "2026-11-08T13:32:09+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "changed",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -365,9 +365,9 @@
       "published_at": null,
       "content_hash": "64ba07bc4e90236f95575455617ece15dc0b4cbec82d168c57cebe5ed02aaf8f",
       "first_seen_at": "2026-11-08T13:32:09+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "changed",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -392,9 +392,9 @@
       "published_at": null,
       "content_hash": "ee4499a89a9a3fc0f754dfd9b9d5fa986f282c07d2d7b95ac16030c34ba684af",
       "first_seen_at": "2026-11-08T13:32:09+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "changed",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": [
         "官方页面正文有变化，提取字段未变化；请核对原文"
       ]
@@ -471,7 +471,7 @@
       "published_at": null,
       "content_hash": "be6118acf680b098ff4bed8c4c3b1c38e5d1f3a750f3c2e5bc05280260603f4b",
       "first_seen_at": "2026-11-08T13:32:09+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -496,7 +496,7 @@
       "published_at": null,
       "content_hash": "33f78d7789113eb98f798a1481511627d49db04ccc4084831d6cea950b281c1b",
       "first_seen_at": "2026-11-08T13:32:09+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "baseline",
       "changed_at": null,
       "change_details": []
@@ -521,9 +521,9 @@
       "published_at": null,
       "content_hash": "df0653490f401fe4bb821d1ed81bbb52d20c026b3831718aee8fbf4288e1c8b6",
       "first_seen_at": "2026-11-09T12:49:13+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -546,9 +546,9 @@
       "published_at": null,
       "content_hash": "547fbfcf708a15961c72f776f3d040f53c24a3d78aed7dfdf4d68f530ee62da2",
       "first_seen_at": "2026-11-10T14:04:02+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -571,9 +571,9 @@
       "published_at": null,
       "content_hash": "4e8941872ab7f99551cb988bc44f3cc7892534e3cc474545aa0411601548fbd1",
       "first_seen_at": "2026-11-11T12:51:51+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -621,9 +621,9 @@
       "published_at": null,
       "content_hash": "ad374eab71e2b949e2b494d33a045a7da2f665e5939438a7c9fae9407ed10afd",
       "first_seen_at": "2026-11-16T12:56:13+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -646,9 +646,9 @@
       "published_at": null,
       "content_hash": "4ba4b76269bf583cab987d4d235dcb75d320c2da823471aac7638482daeb399e",
       "first_seen_at": "2026-11-23T13:55:35+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     },
     {
@@ -671,9 +671,34 @@
       "published_at": null,
       "content_hash": "bcbf83b039886f720e8c4aab6e12056c536206c7125bc798a5e39834d0811bf3",
       "first_seen_at": "2026-11-24T16:34:48+08:00",
-      "last_checked_at": "2026-11-25T15:09:02+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
       "change_type": "new",
-      "changed_at": "2026-11-25T15:09:02+08:00",
+      "changed_at": "2026-11-26T14:59:00+08:00",
+      "change_details": []
+    },
+    {
+      "id": "78f300d73421a0e1",
+      "title": "关于组织报名第十二届（2027年度）全国大学生生命科学竞赛（科学探究类）的通知",
+      "category": "general",
+      "opportunity_type": "竞赛",
+      "campus_source": true,
+      "source_id": "nuist_bulletin",
+      "source_name": "南信大创新创业公告",
+      "official_url": "https://bulletin.nuist.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1016&wbnewsid=58476",
+      "registration_method": "未公布／待核实",
+      "registration_url": null,
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "campus_deadline": null,
+      "major_official": null,
+      "major_suggestion": "理工科及跨学科方向，按当届要求核实",
+      "notes": "请核对公告原文中的组队、资格与费用要求。 本校竞赛认定以当年目录为准；优先核对校内截止时间。",
+      "published_at": null,
+      "content_hash": "b3299f48c5d276b51e757c9aeea004ca8d3bf401b6c84fc43dc339ecb88172de",
+      "first_seen_at": "2026-11-26T14:59:00+08:00",
+      "last_checked_at": "2026-11-26T14:59:00+08:00",
+      "change_type": "new",
+      "changed_at": "2026-11-26T14:59:00+08:00",
       "change_details": []
     }
   ],
@@ -684,7 +709,7 @@
       "url": "https://modelscope.cn/events",
       "status": "ok",
       "reason": "读取 4 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -733,7 +758,7 @@
       "url": "https://www.datafountain.cn/competitions",
       "status": "ok",
       "reason": "已读取公开列表；当前无符合筛选条件的公告",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -758,7 +783,7 @@
       "url": "https://contest.geoscene.cn/overview",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "单页监测"
     },
     {
@@ -767,7 +792,7 @@
       "url": "https://www.csgpc.org/detail/27080.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "单页监测"
     },
     {
@@ -776,7 +801,7 @@
       "url": "https://contest.gisera.com/view_197.html",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "单页监测"
     },
     {
@@ -793,7 +818,7 @@
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "单页监测"
     },
     {
@@ -818,7 +843,7 @@
       "url": "https://www.grss-ieee.org/community/technical-committees/2026-ieee-grss-data-fusion-contest/",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "单页监测"
     },
     {
@@ -834,8 +859,8 @@
       "name": "南信大创新创业公告",
       "url": "https://bulletin.nuist.edu.cn/cxcy.htm",
       "status": "ok",
-      "reason": "读取 6 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "reason": "读取 7 条",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -844,7 +869,7 @@
       "url": "https://ycxy.nuist.edu.cn/65/list.htm",
       "status": "ok",
       "reason": "已读取公开列表；当前无符合筛选条件的公告",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -877,7 +902,7 @@
       "url": "https://cy.ncss.cn/en/notifications/list",
       "status": "ok",
       "reason": "已读取公开列表；当前无符合筛选条件的公告",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -886,7 +911,7 @@
       "url": "https://www.tiaozhanbei.net/",
       "status": "ok",
       "reason": "已读取公开列表；当前无符合筛选条件的公告",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -895,7 +920,7 @@
       "url": "https://www.mcm.edu.cn/",
       "status": "ok",
       "reason": "读取 1 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -920,7 +945,7 @@
       "url": "https://www.nuedc-training.com.cn/",
       "status": "ok",
       "reason": "读取 2 条",
-      "checked_at": "2026-11-25T15:09:02+08:00",
+      "checked_at": "2026-11-26T14:59:00+08:00",
       "coverage": "列表采集"
     },
     {
@@ -932,7 +957,7 @@
       "checked_at": null
     }
   ],
-  "last_run_at": "2026-11-25T15:09:02+08:00",
-  "last_success_at": "2026-11-25T15:09:02+08:00",
+  "last_run_at": "2026-11-26T14:59:00+08:00",
+  "last_success_at": "2026-11-26T14:59:00+08:00",
   "baseline_at": "2026-10-11T18:40:27+08:00"
 }
